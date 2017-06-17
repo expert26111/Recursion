@@ -71,7 +71,7 @@ public class FibonachiSNUmbers {
     
        public static long fibRefurbished(int n) {
         if (0 == numbers[n]) {
-            numbers[n] = fib(n - 1) + fib(n - 2);
+            numbers[n] = fibRefurbished(n - 1) + fibRefurbished(n - 2);
         }
  
         return numbers[n];
